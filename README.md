@@ -1,13 +1,13 @@
 # lamassu-website
 Website to interface with the ML model created from lamassu-satellite
 
+Note: `images` directory only contains images for this README. They are not used for the site.  
+
 For Python requirements, ensure flask is installed, and run `pip -r assets/requirements.txt` using the `requirements.txt` file in the `assets` directory
 
 Once requirements are installed, run `python3 server.py` to run the flask server and website
 
 ![Site Image](images/gallery.jpg)
-
-Note: `images` directory only contains images for this README. They are not used for the site.  
 
 The following project description is taken from our repo [here](https://github.com/Archan6el/lamassu-satellite/tree/main). Our presentation at the Datathon is also in said repo.
 # Project Overview
