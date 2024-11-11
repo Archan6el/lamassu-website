@@ -63,7 +63,7 @@ def run_calculate_area_script(file_path, confidence):
 
     """Run the calculate_area.py script with the given file and confidence."""
     command = [
-        'python3', f'{current_directory}/scripts/yolov7/calculate-area.py',
+        'python3', f'{current_directory}/scripts/yolov7-scripts/calculate-area.py',
         '--weights', 'assets/best.pt',
         '--source', file_path,
         '--img-size', '640',
