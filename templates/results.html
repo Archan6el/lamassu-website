@@ -9,7 +9,9 @@
 <body>
     <br>
     <h1 style="text-align: center;">Processed Image:</h1>
-    <img src="{{ url_for('static', filename=image_path.split('/')[-1]) }}" alt="Processed Image" width="500" style="display: flex; justify-content: center; align-items: center;">
+    <div style="text-align: center;">
+        <img src="{{ url_for('static', filename=image_path.split('/')[-1]) }}" alt="Processed Image" width="500" style="display: flex; justify-content: center; align-items: center;">
+    </div>
     <br><br>
     <h3 style="text-align: center;"><a href="/" class="button">Go Back</a></h3>
 </body>
