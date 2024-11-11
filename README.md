@@ -9,7 +9,7 @@ Note: `images` directory only contains images for this README. They are not used
 
 # Project Overview
 
-The following description is taken from our repo [here](https://github.com/Archan6el/lamassu-satellite/tree/main)
+The following description is taken from our repo [here](https://github.com/Archan6el/lamassu-satellite/tree/main). Our presentation at the Datathon is also in said repo.
 
 Our group first used [RoboFlow](https://roboflow.com/) to label the cotton fields within satellite aerial photos. Obtaining said satellite images and how we determined which fields were cotton fields was through the [USDA CroplandCROS site](https://croplandcros.scinet.usda.gov/).
 
