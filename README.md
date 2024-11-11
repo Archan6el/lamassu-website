@@ -5,6 +5,8 @@ For Python requirements, ensure flask is installed, and run `pip -r assets/requi
 
 Once requirements are installed, run `python3 server.py` to run the flask server and website
 
+![Site Image](images/gallery.jpg)
+
 Note: `images` directory only contains images for this README. They are not used for the site
 
 # Project Overview
