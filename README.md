@@ -7,8 +7,7 @@ Once requirements are installed, run `python3 server.py` to run the flask server
 
 ![Site Image](images/gallery.jpg)
 
-Note: `images` directory only contains images for this README. They are not used for the site
-
+Note: `images` directory only contains images for this README. They are not used for the site. <br>
 
 The following project description is taken from our repo [here](https://github.com/Archan6el/lamassu-satellite/tree/main). Our presentation at the Datathon is also in said repo.
 # Project Overview
