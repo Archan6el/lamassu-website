@@ -7,7 +7,7 @@ Once requirements are installed, run `python3 server.py` to run the flask server
 
 # Project Overview
 
-(Taken from our repo [here](https://github.com/Archan6el/lamassu-satellite/tree/main)
+The following description is taken from our repo [here](https://github.com/Archan6el/lamassu-satellite/tree/main)
 
 Our group first used [RoboFlow](https://roboflow.com/) to label the cotton fields within satellite aerial photos. Obtaining said satellite images and how we determined which fields were cotton fields was through the [USDA CroplandCROS site](https://croplandcros.scinet.usda.gov/). Soem output images from our data labeling can be found within `train/images` and `train/labels`. 
 
