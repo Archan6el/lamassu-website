@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
     <title>Result</title>
 </head>
 <body>
-    <h1>Processed Image</h1>
-    <img src="{{ url_for('static', filename=image_path.split('/')[-1]) }}" alt="Processed Image" width="500">
+    <br>
+    <h1 style="text-align: center;">Processed Image:</h1>
+    <img src="{{ url_for('static', filename=image_path.split('/')[-1]) }}" alt="Processed Image" width="500" style="display: flex; justify-content: center; align-items: center;">
     <br><br>
-    <a href="/" class="button">Go Back</a>
+    <h3 style="text-align: center;"><a href="/" class="button">Go Back</a></h3>
 </body>
 </html>

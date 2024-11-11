@@ -1,20 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload and Calculate Area</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <title>Cotton Identification Program</title>
 </head>
 <body>
-    <h1>Upload Image and Set Confidence Level</h1>
+    <!-- JavaScript for dynamic elements -->
+    <script>
+        function updateButtonText() {
+            var fileInput = document.getElementById('file');
+            var fileName = fileInput.files[0].name; // Get the name of the selected file
+            var fileButton = document.getElementById('fileButton');
+            var fileNameDisplay = document.getElementById('fileNameDisplay');
+            
+            // Update the button text with the file name
+            fileButton.textContent = "Change File";
+            // Show the file name below the button
+            fileNameDisplay.textContent = "Selected File: " + fileName;
+        }
+    </script>
+
+    <div class="toppage">
+        <h1 style="text-align: center;">Lamassu Cotton Identification Program</h1>
+        <h2 style="text-align: center;">TAMU Datathon 2024</h2>
+        <h3 style="text-align: center;">Created By: Michael Bengil, Ryan Dempsey, Maxwell Vo</h3>
+        <h3 style="text-align: center;"><a href="https://github.com/Archan6el/lamassu-website" target="_blank">Github Depository</a></h3> 
+    </div>
     <form action="/upload" method="post" enctype="multipart/form-data">
-        <label for="file">Select an image file:</label>
-        <input type="file" name="file" id="file" required><br><br>
+        <div class="wrapper">
+            <div class="border"></div>
+            <div class="main-element" style="text-align: center;">
+                <h2>Upload Image:</h2>
+                <!-- Hidden file input -->
+                <input type="file" name="file" id="file" required class="file-input" onchange="updateButtonText()">
+                <!-- Custom button -->
+                <button type="button" id="fileButton" class="file-button" onclick="document.getElementById('file').click();" style="font-size: larger;">No File Selected</button>
+                <!-- Display selected file name here -->
+                <p id="fileNameDisplay" style="margin-top: 10px; color: #000000;"></p>
+            <h2><label for="confidence">Set Confidence Level:</label></h2>
+            <input type="number" name="confidence" id="confidence" min="0" max="1" step="0.01" required placeholder="ex: 0.01" ><br><br>
 
-        <label for="confidence">Confidence Level:</label>
-        <input type="number" name="confidence" id="confidence" min="0" max="1" step="0.01" required><br><br>
-
-        <button type="submit">Upload and Calculate Area</button>
+            <button type="submit" class="file-button" style="font-size: larger;">Upload and Calculate Area</button>
+            </div>
+        </div>
     </form>
 </body>
 </html>
